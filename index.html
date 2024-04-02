@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="">
+        <div class="container nav">
+          <div class="nav_links">
+            <img src="assets/images/Logo.png" alt="" />
+            <ul>
+              <li>
+                <a href="">الرئيسية</a>
+                <div class="underline_container">
+                  <div class="border"></div>
+                </div>
+              </li>
+              <li>
+                <a href="">ورش العمل</a>
+                <div class="underline_container">
+                  <div class="border"></div>
+                </div>
+              </li>
+              <li>
+                <a href="">الموقع</a>
+                <div class="underline_container">
+                  <div class="border"></div>
+                </div>
+              </li>
+              <li>
+                <a href="">من نحن</a>
+                <div class="underline_container">
+                  <div class="border"></div>
+                </div>
+              </li>
+              <li>
+                <a href="">تواصل معنا</a>
+                <div class="underline_container">
+                  <div class="border"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="sign_in_btn">
+            <button>التسجيل والمشاركة</button>
+            <div class="burger-menu" id="burger-menu">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <video autoplay muted loop>
+        <source src="intro.mp4" />
+      </video>
+      <div class="container header_content">
+        <h1>ملتقــــى جـــــــدة</h1>
+        <p>
+          تشهد مدينه جدة الكثير من التحولات بأداء استثنائيا رغم كل الظروف
+          والتحديات حيث حققت نمو كبير في جميع المجالات
+        </p>
+      </div>
+    </header>
+    <footer>
+      <div class="container footer_content">
+        <section class="">
+          <img
+            style="margin-bottom: 20px"
+            src="assets/images/Logo.png"
+            alt=""
+          />
+
+          <p>
+            تشهد مدينه جدة الكثير من التحولات بأداء استثنائيا رغم كل الظروف
+            والتحديات حيث حققت نمو كبير في جميع المجالات.
+          </p>
+          <ul class="social">
+            <li class="contact_item">
+              <img src="assets/images/facebook.png" alt="" />
+            </li>
+            <li class="contact_item">
+              <img src="assets/images/threads.png" alt="" />
+            </li>
+            <li class="contact_item">
+              <img src="assets/images/tiktok.png" alt="" />
+            </li>
+            <li class="contact_item">
+              <img src="assets/images/instagram.png" alt="" />
+            </li>
+            <li class="contact_item">
+              <img src="assets/images/google.png" alt="" />
+            </li>
+          </ul>
+        </section>
+        <section class="">
+          <div style="margin-bottom: 20px">
+            <h3>محتوى الموقع</h3>
+            <div class="underline_container">
+              <div class="border underline" style="width: 100%">
+                <div class="cutting"></div>
+              </div>
+            </div>
+          </div>
+          <ul class="nav_list">
+            <li class=""><a href="">الرئيسية</a></li>
+            <li class=""><a href="">من نحن</a></li>
+            <li class=""><a href="">ورش العمل</a></li>
+            <li class=""><a href="">موقعنا</a></li>
+            <li class=""><a href="">تواصل معنا</a></li>
+          </ul>
+        </section>
+        <section class="">
+          <div style="margin-bottom: 20px">
+            <h3>جهات التواصل</h3>
+            <div class="underline_container">
+              <div class="border underline" style="width: 100%">
+                <div class="cutting"></div>
+              </div>
+            </div>
+          </div>
+          <ul class="contacts">
+            <li class="">
+              <div>
+                <img src="assets/images/location.png" alt="" />
+              </div>
+              <p>الطابق الثالث، مبنى 2270، طريق 2833، جدة مملكة السعودية</p>
+            </li>
+            <li class="">
+              <div>
+                <img src="assets/images/email.png" alt="" />
+              </div>
+              <p>info@jeddahforum.com</p>
+            </li>
+            <li class="">
+              <div>
+                <img src="assets/images/phone.fill.png" alt="" />
+              </div>
+              <p class="no_wrap">السعودية 009660000099963</p>
+            </li>
+          </ul>
+        </section>
+        <section class="">
+          <div style="margin-bottom: 20px">
+            <h3>سجل في النشرة البريدية</h3>
+            <div class="underline_container">
+              <div class="border underline" style="width: 100%">
+                <div class="cutting"></div>
+              </div>
+            </div>
+          </div>
+          <form>
+            <input
+              placeholder="أدخل بريدك الألكترونى"
+              type="email"
+              name=""
+              id=""
+            />
+            <button>
+              <img src="assets/images/send 1.png" alt="" />
+            </button>
+          </form>
+          <div class="map_wrapper">
+            <div id="map"></div>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <script>
+      ((g) => {
+        var h,
+          a,
+          k,
+          p = "The Google Maps JavaScript API",
+          c = "google",
+          l = "importLibrary",
+          q = "__ib__",
+          m = document,
+          b = window;
+        b = b[c] || (b[c] = {});
+        var d = b.maps || (b.maps = {}),
+          r = new Set(),
+          e = new URLSearchParams(),
+          u = () =>
+            h ||
+            (h = new Promise(async (f, n) => {
+              await (a = m.createElement("script"));
+              e.set("libraries", [...r] + "");
+              for (k in g)
+                e.set(
+                  k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
+                  g[k]
+                );
+              e.set("callback", c + ".maps." + q);
+              a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+              d[q] = f;
+              a.onerror = () => (h = n(Error(p + " could not load.")));
+              a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+              m.head.append(a);
+            }));
+        d[l]
+          ? console.warn(p + " only loads once. Ignoring:", g)
+          : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
+      })({ key: "AIzaSyA2WQXpvfCk4c_i-TE9_dCAbZBeKwzAz_4", v: "weekly" });
+    </script>
+  </body>
+</html>
